@@ -45,11 +45,15 @@ const email = ref("");
 const promt = ref("");
 
 const sendEmail = () => {
-  queryTimeout.value = setTimeout(async () => {
-    if(searchQuery.value !== ''){
-      const result = await axios.post();
-    }
-  },300);
+//   queryTimeout.value = setTimeout(async () => {
+//     if(email.value !== '' && promt.value !==''){
+//         const response = await axios.post('https://localhost:7089/api/Emails/?', {
+//           email: email.value,
+//           promt: promt.value
+//         }).then((response) => {})
+//     }
+//   },300);
+
 }
 </script>
 
